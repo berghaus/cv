@@ -1,0 +1,148 @@
+% resume.tex
+% vim:set ft=tex spell:
+\documentclass[12pt,a4paper]{article}
+\usepackage[letterpaper,margin=0.8in]{geometry}
+\usepackage{mdwlist}
+\usepackage{gfsartemisia-euler}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% put some color into your dividers and make them a bit thicker than default
+\newcommand{\colorrule}[1]
+{
+  {\color{#1}\hrule height 2pt}
+  \vspace{1.0em}
+}
+
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf Frank Olaf Berghaus}
+
+  Rue de la Servette 78\ \ \textbullet
+  \ \ CH-1202 Genève\ \  \textbullet
+  \ \ {\sc Suisse}
+  \\
+  +41 (0)77 995 0502\ \ \textbullet
+  \ \ frank.berghaus@gmail.com
+  \\
+  Nationanlity: {\sc German \& Canadian}
+\end{center}
+
+\colorrule{NavyBlue}
+\subsection*{Experience}
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{CERN}}
+		{\textbf{Meyrin, Genève}}
+	\\
+	\headerrow
+		{\emph{CERN Fellow}}
+		{\emph{2015 -- presnt}}
+	\begin{itemize*}
+    \item Implemented a DRUPAL based
+      \href{website \url{http://dphep.web.cern.ch}} to act as an information
+      portal for the DPHEP collaboration.
+		\item Trained on the components of digital archives to RDA and ISO
+      standards.
+		\item Evaluated the related techonologies in place at CERN: CASTOR, EOS,
+      CernVM, CVMFS, and Invenio
+		\item Implemented CernVM based environment to preserve the software needed
+      to reconstruct and analyze data from DELPHI and generate Monte-Carlo for
+      DELPHI
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{University of Victoria}}
+		{\textbf{Victoria, BC, Canada}}
+	\\
+	\headerrow
+		{\emph{Research Associate}}
+		{\emph{2013 -- 2014}}
+	\begin{itemize*}
+		\item Developed of cloud and data federation software
+    \item Deployed of elastic batch computing resources for High Energy
+      Physics experiments
+    \item Included of Nimbus, OpenStack, Amazon EC2, and Google Compute Engine
+     in ATLAS and Belle II computing
+    \item Integrated cloud resources into the PanDA and DIRAC workload
+      management systems
+	\end{itemize*}
+\end{itemize}
+
+
+\colorrule{NavyBlue}
+\subsection*{Education}
+\begin{itemize}
+  \parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{University of Victoria}}
+		{\textbf{Victoria, British Columbia}}
+	\\
+	\headerrow
+		{\emph{Faculty of Graduate Studies, Doctor of Philosophy}}
+		{\emph{2006 -- 2013}}
+	\begin{itemize*}
+		\item[Thesis] Search for Quark Compositeness in 7~TeV Proton-Proton
+      Collisions with the ATLAS Detector at the Large Hadron Collider
+    \item[Advisor] Dr.\ Michel Lefebvre
+	\end{itemize*}
+
+  \item
+	\headerrow
+		{\textbf{University of British Columbia}}
+		{\textbf{Vancouver, British Columbia}}
+	\\
+	\headerrow
+		{\emph{Faculty of Graduate Studies, Master of Science}}
+		{\emph{2003 -- 2006}}
+	\begin{itemize*}
+		\item[Thesis] K2K Near Detector Laserball Calibration: Manipulator
+      Motivation, Design and Results
+    \item[Advisor] Dr.\ Scott Oser
+	\end{itemize*}
+
+  \item
+	\headerrow
+		{\textbf{Saint Mary's University}}
+		{\textbf{Halifax, Nova Scotia}}
+	\\
+	\headerrow
+		{\emph{Department of Physics and Astronomy, Bachelor of Science}}
+		{\emph{1999 -- 2003}}
+	\begin{itemize*}
+		\item[Awards] Achievement Scholarship (2000-2003), First Place APICS
+      Mathematics Competition, Shatford Trust, NSERC Undergraduate Student
+      Research Assistant Fellowship, The Monsignor Richard J.\ Murphy
+      Scholarship, Dr.\ C.\ Henry Reardon Scholarship, TRIUMF Research
+      Fellowship
+	\end{itemize*}
+\end{itemize}
+
+\colorrule{NavyBlue}
+\subsection*{Awards \& Destinctions}
+
+\end{document}
