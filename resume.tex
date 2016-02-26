@@ -8,6 +8,8 @@
 \usepackage{textcomp}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{tabu}
 
 \pagestyle{empty}
 \setlength{\tabcolsep}{0em}
@@ -32,18 +34,13 @@
 
 
 \begin{document}
-
 \begin{center}
-  {\LARGE \textbf Frank Olaf Berghaus}
-
-  Rue de la Servette 78\ \ \textbullet
-  \ \ CH-1202 Genève\ \  \textbullet
-  \ \ {\sc Suisse}
-  \\
-  +41 (0)77 995 0502\ \ \textbullet
-  \ \ frank.berghaus@gmail.com
-  \\
-  Nationanlity: {\sc German \& Canadian}
+	\begin{tabu} to 0.9\textwidth {X[l] X[r]}
+	  \multirow{2}{*}{\LARGE \textbf{Frank Olaf Berghaus}} & {\small Rue de la Servette 78} \\
+																				             	  & {\small CH-1202 Genève} \\
+																					              & {\small +41 (0)77 995 0502} \\
+	  {\small Nationanlity: {\sc German \& Canadian}}		  & {\small frank.berghaus@gmail.com} \\
+	\end{tabu}
 \end{center}
 
 \colorrule{NavyBlue}
