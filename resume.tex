@@ -10,6 +10,9 @@
 \usepackage{hyperref}
 \usepackage{multirow}
 \usepackage{tabu}
+\usepackage{natbib}
+\usepackage{bibentry}
+\nobibliography*
 
 \pagestyle{empty}
 \setlength{\tabcolsep}{0em}
@@ -32,14 +35,17 @@
   \vspace{1.0em}
 }
 
+% create some space between cells in a row
+\setlength{\tabcolsep}{5pt}
 
 \begin{document}
 \begin{center}
 	\begin{tabu} to 0.9\textwidth {X[l] X[r]}
-	  \multirow{2}{*}{\LARGE \textbf{Frank Olaf Berghaus}} & {\small Rue de la Servette 78} \\
-																				             	  & {\small CH-1202 Genève} \\
-																					              & {\small +41 (0)77 995 0502} \\
-	  {\small Nationanlity: {\sc German \& Canadian}}		  & {\small frank.berghaus@gmail.com} \\
+	  \multirow{2}{*}{\LARGE \textbf{Frank Olaf Berghaus}}
+		                                      & {\small Rue de la Servette 78} \\
+																          & {\small CH-1202 Geneva} \\
+																          & {\small +41 (0)77 995 0502} \\
+	                                    		& {\small frank.berghaus@gmail.com} \\
 	\end{tabu}
 \end{center}
 
@@ -51,7 +57,7 @@
 	\item
 	\headerrow
 		{\textbf{CERN}}
-		{\textbf{Meyrin, Genève}}
+		{\textbf{Meyrin, Geneva}}
 	\\
 	\headerrow
 		{\emph{Fellow on Data Preservation in HEP}}
@@ -98,6 +104,21 @@
 	\end{itemize*}
 \end{itemize}
 
+\subsubsection*{Skills}
+\begin{tabu} to \textwidth{r p{6.5cm} r p{6.5cm}}
+	Design & Programming patterns and practices & Linux  & 17 Years User and years
+	 administrative experience \\
+  \rule{0pt}{4ex}
+	\CPP   & 9 years programming experience     & ROOT   & Statistical data
+	 analysis toolkit uses for my PhD dissertation \\
+	\rule{0pt}{4ex}
+	git    & Collaborative code development     & \LaTeX & Writing scientific
+	 documents and presenta- tions \\
+	\rule{0pt}{4ex}
+	Clouds & Usage of OpenStack, Nimbus, Amazon EC2, and GCE & Archival & Training
+	in Open Archival Information Systems\\
+	\rule{0pt}{4ex}
+\end{tabu}
 
 \colorrule{NavyBlue}
 \subsection*{Education}
@@ -134,26 +155,41 @@
 \end{itemize}
 
 \subsubsection*{PhD Dissertation}
-\begin{itemize}
-	\item[Title]
-	{\it Search for Quark Compositeness in 7 TeV Proton-Proton Collisions with the
-	 ATLAS Detector at the Large Hadron Collider}
-	\item[Committee]
-	{\bf Dr.\ Michel Lefebvre}, Dr.\ Rob McPherson, Dr.\ Randall Sobie,
-	Dr.\ Stan Dosso
-	\item[Abstract]
-	{\small The ATLAS detector at CERN’s Large Hadron Collider is collecting
-	 data to investigate proton collisions at the highest energy ever produced. My
-	 thesis searches for structure in quarks by measuring the inclusive dijet
-	 spectrum with the ATLAS detector.}
-\end{itemize}
+\begin{tabular}{r p{14.3cm}}
+	Title     & {\it Search for Quark Compositeness in 7 TeV Proton-Proton
+							 Collisions with the ATLAS Detector at the Large Hadron
+							 Collider} \\
+	Committee & {\bf Dr.\ Michel Lefebvre}, Dr.\ Rob McPherson,
+							 Dr.\ Randall Sobie, Dr.\ Stan Dosso \\
+	Abstract  & {\small The ATLAS detector at CERN's Large Hadron Collider is
+	             collecting data to investigate proton collisions at the highest
+							 energy ever produced. My thesis searches for structure in quarks
+							 by measuring the inclusive dijet spectrum with the ATLAS
+							 detector.} \\
+\end{tabular}
+
+
+
+% \begin{itemize}
+% 	\item[Title]
+% 	{\it Search for Quark Compositeness in 7 TeV Proton-Proton Collisions with the
+% 	 ATLAS Detector at the Large Hadron Collider}
+% 	\item[Committee]
+% 	{\bf Dr.\ Michel Lefebvre}, Dr.\ Rob McPherson, Dr.\ Randall Sobie,
+% 	Dr.\ Stan Dosso
+% 	\item[Abstract]
+% 	{\small The ATLAS detector at CERN’s Large Hadron Collider is collecting
+% 	 data to investigate proton collisions at the highest energy ever produced. My
+% 	 thesis searches for structure in quarks by measuring the inclusive dijet
+% 	 spectrum with the ATLAS detector.}
+% \end{itemize}
 
 
 \subsubsection*{Training}
 \begin{itemize}
-	\item[2015] \emph{Training on ISO 16363}, {CERN}, Genève, \textsc{Suisse}\\
+	\item[2015] \emph{Training on ISO 16363}, {CERN}, Geneva, \textsc{Suisse}\\
 	{\small Audit and certification of trustworthy digital repositories}
-	\item[2015] \emph{Language Training}, {CERN}, Genève, \textsc{Suisse}\\
+	\item[2015] \emph{Language Training}, {CERN}, Geneva, \textsc{Suisse}\\
 	{\small French A1 \& A2}
 	% \item[2012] \emph{Pathways to Success}, {University of Victoria},
 	% Victoria, \textsc{Canada}\\
@@ -215,9 +251,29 @@
 
 \colorrule{NavyBlue}
 \subsection*{Publications}
+\bibliographystyle{acm}
+%remove "References" from bibliography header
+%{\def\section*#1{}\bibliography{publications}}
+%\nocite{*}
+%\bibliographystyle{plain}
+\nobibliography{publications}
+\begin{itemize}
+	\item[2015] \bibentry{DPHEPStatusReport}
+	\item[2014] \bibentry{1742-6596-513-3-032035}
+	\item[2010] \bibentry{Aad:2010ai}
+	\item[2006] \bibentry{Morris:2006df}
+\end{itemize}
 
 
 \colorrule{NavyBlue}
 \subsection*{Presentations}
-
+\begin{itemize}
+	\item[2016] \emph{DPHEP Portal \& LEP Progress}. WLCG/DPHEP Workshop.  Feb
+		2014. Lisbon, Portugal.
+	\item[2014] \emph{Cloud Operations and Integration}. ATLAS Software and
+		Computing Workshop. Feb 2014. CERN, Geneva.
+	\item[2012] \emph{Search for Quark Substructure in 7 TeV Centre-of-Mass
+		Proton-Proton Collisions with the ATLAS Detector at the LHC}. CAP Congress.
+		Jun 2012. University of Calgary, Calgary.
+\end{itemize}
 \end{document}
