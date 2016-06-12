@@ -1,7 +1,7 @@
 % resume.tex
 % vim:set ft=tex spell:
 \documentclass[12pt,a4paper]{article}
-\usepackage[a4paper,margin=0.8in]{geometry}
+\usepackage[letter,margin=0.8in]{geometry}
 \usepackage{mdwlist}
 \usepackage{roboto}  %% Option 'sfdefault' only if the base font of the document is to be sans serif
 \usepackage[T1]{fontenc}
@@ -48,6 +48,8 @@
 	                                    		& {\small frank.berghaus@gmail.com} \\
 	\end{tabu}
 \end{center}
+\colorrule{NavyBlue}
+Blah blah blah
 
 \colorrule{NavyBlue}
 \subsection*{Experience}
@@ -63,10 +65,9 @@
 		{\emph{Fellow on Data Preservation in HEP}}
 		{\emph{2015 -- presnt}}
 	\begin{itemize*}
-		\item Preserving CERN Program Library documentation
-		\item Implementing an environment for LEP software preservation
-    \item Built the collaboration \href{http://dphep.web.cern.ch}{website}
-		\item Learned the requirements for digital archives by RDA and ISO standards
+		\item Preserving LEP documentation, computing, and data
+		\item Assessing WLCG as digital archives by RDA and ISO standards
+    \item Built the global DPHEP \href{http://dphep.web.cern.ch}{portal}
 		\item Evaluated the preservation technologies in place at CERN
 	\end{itemize*}
 
@@ -82,8 +83,8 @@
 		\item Developed of cloud and data federation software
     \item Deployed of elastic batch computing resources for High Energy
       Physics experiments
-    \item Included of Nimbus, OpenStack, Amazon EC2, and Google Compute Engine
-     in ATLAS and Belle II computing
+    \item Included Nimbus, OpenStack, Amazon, and Google Compute Engine
+     in ATLAS and Belle II computing systems
     \item Integrated cloud resources into the PanDA and DIRAC workload
       management systems
 	\end{itemize*}
@@ -97,12 +98,10 @@
 		{\emph{Research Associate}}
 		{\emph{2006 -- 2013}}
 	\begin{itemize*}
-		\item Statistical analysis of ATLAS data employing Monte Carlo simulation
-			methods
-		\item Development of jet calibration procedures for the reconstruction of
-			ATLAS data
-		\item Development of software to monitor the liquid argon calorimeter
-		\item Operation of the ATLAS detector at CERN
+		\item Analysed early data employing profile likelihood and hybrid approaches
+		\item Developed jet calibration procedures for the ATLAS experiment
+		\item Developed software to monitor the liquid argon calorimeter
+		\item Operation of the detector at CERN
 	\end{itemize*}
 \end{itemize}
 
@@ -117,8 +116,8 @@
 	git    & Collaborative code development     & \LaTeX & Writing scientific
 	 documents and presentations \\
 	\rule{0pt}{4ex}
-	Clouds & Usage of OpenStack, Nimbus, Amazon EC2, and GCE & Archival & Training
-	in Open Archival Information Systems\\
+	Clouds & Usage of OpenStack, Nimbus, Amazon EC2, and GCE & Archival & Design
+	and assessment of in Open Archival Information Systems\\
 	\rule{0pt}{4ex}
 \end{tabu}
 
@@ -256,11 +255,11 @@
 
 \colorrule{NavyBlue}
 \subsection*{Publications}
-\bibliographystyle{acm}
+%\bibliographystyle{acm}
 %remove "References" from bibliography header
 %{\def\section*#1{}\bibliography{publications}}
 %\nocite{*}
-%\bibliographystyle{plain}
+\bibliographystyle{plain}
 \nobibliography{publications}
 \begin{itemize}
 	\item[2015] \bibentry{DPHEPStatusReport}
